@@ -59,14 +59,14 @@ window.addEventListener('load', function () {
     AvImg.style.margin= "20px 0 0 0";
 
 
-    // ID WRAPPER IS HERE
+    // Все стили по расположению карточки прописаны для обертки, в данном случае в wrapper.
     const wrapper = this.document.createElement('div');
     wrapper.id = "wrapper"; // ID WRAPPER IS HERE
     wrapper.style.margin = "80px auto";
     wrapper.style.display = "flex";
     wrapper.style.justifyContent = "space-around";
 
-
+    //У карточек нет никаких CSS свойств для расположения внутри родителя. Карточки независимы.
     const divItem = this.document.createElement('div');
     divItem.className = "card__item";
     divItem.style.width = "250px";
@@ -88,5 +88,6 @@ window.addEventListener('load', function () {
 
     wrapper.append(divItem);
     body.append(wrapper);
+    
     alert("Я оцениваю свою работу на 110 баллов" )
 })
