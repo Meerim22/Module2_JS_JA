@@ -6,10 +6,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const tMonth = document.getElementById('total-amount');
     const tSumma = document.getElementById('total-t');
     const tRate = document.getElementById('total-interes');
+    const err= document.getElementById('erorr');
     const loader = document.getElementById('loader');
     loader.style.display = 'none';
     const output = document.getElementById('output');
     output.style.display = 'none';
+    err.style.display = 'none';
     
     form.addEventListener('submit', (e) => {
         e.preventDefault();
@@ -25,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const yearsValue = years.value;
 
         if(summaValue === '' || rateValue === '' || yearsValue === '' || summaValue === 0 || rateValue === 0 || yearsValue === 0) {
-            alert('Введите значения чисел в поля')
+            err.style.display = 'block';
         } else {
             output.style.display = 'block';
         }
