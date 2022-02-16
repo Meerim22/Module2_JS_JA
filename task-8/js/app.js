@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
             err.style.display = 'block';
         } else {
             output.style.display = 'block';
+            err.style.display = 'none';
         }
 
         const month = rateValue * 12;
