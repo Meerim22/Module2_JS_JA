@@ -18,7 +18,7 @@ getRandomArbitrary();
 
 start.addEventListener("click", gameStart);
 function gameStart() {
-    console.log(random);
+    // console.log(random);
 
     if (start.innerHTML === "Новая игра") {
         message.innerHTML = "";
@@ -34,7 +34,7 @@ function gameStart() {
         message.innerHTML = `Вы проиграли`;
         poput.innerHTML = "0";
         getRandomArbitrary();
-        console.log(random);
+        // console.log(random);
     } else if (input.value > 10 || input.value < 1) {
         message.style.color = "blue";
         message.innerHTML = `Введите число от 1 до 10`;
@@ -46,7 +46,7 @@ function gameStart() {
         message.style.color = "green";
         start.innerHTML = "Новая игра";
         getRandomArbitrary();
-        console.log(random);
+        // console.log(random);
     } else if (input.value !== random) {
         input.value = "";
         counter--;
