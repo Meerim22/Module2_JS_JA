@@ -1,4 +1,6 @@
-function newCard() {
+
+window.addEventListener("load", function () {
+  function newCard() {
   const productsInner = document.querySelector(".products__inner");
   let  = fetch("/text.json")  // FETCH API
     .then((res) => {
@@ -41,3 +43,4 @@ function newCard() {
     });
 }
 newCard();
+});
