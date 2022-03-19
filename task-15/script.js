@@ -1,6 +1,6 @@
 function newCard() {
   const productsInner = document.querySelector(".products__inner");
-  fetch("/text.json")  // FETCH API
+  fetch("text.json")  // FETCH API
     .then((res) => {
       return res.json();
     })
@@ -38,6 +38,9 @@ function newCard() {
         productsItemPrice.innerHTML = e.price;
         productsItemText.innerHTML = e.desc;
       });
+    })
+    .catch((error) => {
+      console.log(error);
     });
 }
 newCard();
