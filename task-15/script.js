@@ -1,6 +1,6 @@
 function newCard() {
   const productsInner = document.querySelector(".products__inner");
-  let  = fetch("/text.json")  // FETCH API
+  fetch("/text.json")  // FETCH API
     .then((res) => {
       return res.json();
     })
