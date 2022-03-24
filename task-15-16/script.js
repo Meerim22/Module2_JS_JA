@@ -7,7 +7,7 @@ fetch("text.json")  // FETCH API
   .then((data) => {
     data.forEach((e) => {
       let productsItem = document.createElement("article");
-      productsItem.className = "products__item";
+      productsItem.classList = `products__item  ${e.category}`;
 
       let img = document.createElement("img");
       img.className = "products__item-photo";
@@ -25,11 +25,7 @@ fetch("text.json")  // FETCH API
       let productsItemText = document.createElement("p");
       productsItemText.className = "products__item-text";
 
-      let cards = document.createElement("div");
-      cards.classList = `cards  ${e.category}`;
-
-      productsInner.appendChild(cards);
-      cards.appendChild(productsItem);
+      productsInner.appendChild(productsItem);
       productsItem.appendChild(img);
       productsItem.appendChild(productsItemInfo);
       productsItemInfo.appendChild(header);
@@ -42,7 +38,7 @@ fetch("text.json")  // FETCH API
       productsItemPrice.textContent = e.price + "сом";
       productsItemText.innerHTML = e.desc;
 
-      const filterCard = document.querySelectorAll(".cards");
+      const filterCard = document.querySelectorAll(".products__item");
       productsFilters.addEventListener("click", (event) => {
         if (event.target.tagName !== "BUTTON") return false;
         let filterClass = event.target.dataset["filter"];
