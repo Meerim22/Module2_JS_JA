@@ -3,4 +3,4 @@
 2. Введите в bash теримнал команды:npm install, npm run start
 
 Итог:
-<img width="1144" alt="Снимок экрана 2022-04-10 в 03 18 56" src="/2022-04-10_18-05-03.png">
+  <a href="https://drive.google.com/file/d/1yU19ukgEbBXdGqFxr-nsjs_6Y3eMwjDA/view"></a>
