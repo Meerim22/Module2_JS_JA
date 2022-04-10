@@ -3,3 +3,5 @@
 2. Введите в bash теримнал команды:npm install, npm run start
 
 <a href="https://drive.google.com/file/d/1yU19ukgEbBXdGqFxr-nsjs_6Y3eMwjDA/view">Итог</a>
+
+На данный момент  проект ещё не закончен, так как сейчас всё основано на html, вскоре элементы будут генерироватся из JS файла. Убедительная просьба дождаться этого.
